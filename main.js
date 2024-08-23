@@ -1,3 +1,5 @@
+import { initPWA } from './pwa.js'
+
 let currentAudio = null;
 
 // Function to play a sound
@@ -35,3 +37,5 @@ function createButtons() {
 
 // Call the function to create the buttons on page load
 createButtons();
+
+initPWA()
