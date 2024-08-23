@@ -26,6 +26,7 @@ function createButtons() {
         // Create a new button element
         const button = document.createElement("button");
         button.classList.add("sound-button");
+        button.ariaLabel = "Play sound"
 
         // Add an event listener to play the sound on click
         button.addEventListener("click", () => playSound(soundSrc));
