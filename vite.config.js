@@ -38,6 +38,6 @@ export default defineConfig(({ mode }) => {
                 },
             }),
         ],
-        base: mode === "development" ? "/" : "/tingu-soundboard/",
+        base: process.env.BASE_PATH ?? ''
     };
 });
