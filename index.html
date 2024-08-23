@@ -40,23 +40,33 @@
         gap: 10px;
     }
 
-    .sound-button {
+    button {
         height: 4.5rem;
         width: 4.5rem;
         margin: auto;
         border-radius: 100%;
-        background-color: #fff7ed;
-        border: solid #dc2626;
+        border-style: solid;
         border-width: 0 0 3px 0;
-        box-shadow: 2px 2px 2px #9a3412;
         cursor: pointer;
         transition: all .05s linear;
+        box-shadow: 2px 2px 2px #9a3412;
+
     }
 
-    .sound-button:active {
+    button:active {
         box-shadow: 1px 1px 1px #9a3412;
         border-width: 0 0 1px 0;
         transform: translateY(2px);
+    }
+
+    .sound-orange {
+        background-color: #fff7ed;
+        border-color: #dc2626;
+    }
+
+    .sound-blue {
+        background-color: #bae6fd;
+        border-color: #2563eb;
     }
 
     img {
@@ -71,20 +81,24 @@
     <main>
         <img src="tingu-orng.png" width="447" height="455" alt="tingus dumb face">
         <div id="buttonContainer"></div>
-        <audio src="Track-1.m4a" type="audio/mp4"></audio>
-        <audio src="Track-2.m4a" type="audio/mp4"></audio>
-        <audio src="Track-3.m4a" type="audio/mp4"></audio>
-        <audio src="Track-4.m4a" type="audio/mp4"></audio>
-        <audio src="Track-5.m4a" type="audio/mp4"></audio>
-        <audio src="Track-6.m4a" type="audio/mp4"></audio>
-        <audio src="Track-7.m4a" type="audio/mp4"></audio>
-        <audio src="Track-8.m4a" type="audio/mp4"></audio>
-        <audio src="Track-9.m4a" type="audio/mp4"></audio>
-        <audio src="Track-10.m4a" type="audio/mp4"></audio>
-        <audio src="Track-11.m4a" type="audio/mp4"></audio>
-        <audio src="Track-12.m4a" type="audio/mp4"></audio>
-        
-        
+        <audio data-tingu src="Track-1.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-2.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-3.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-4.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-5.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-6.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-7.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-8.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-9.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-10.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-11.m4a" type="audio/mp4"></audio>
+        <audio data-tingu src="Track-12.m4a" type="audio/mp4"></audio>
+        <audio src="Track-18.m4a" type="audio/mp4"></audio>
+        <audio src="Track-20.m4a" type="audio/mp4"></audio>
+        <audio src="Track-21.m4a" type="audio/mp4"></audio>
+        <audio src="Track-22.m4a" type="audio/mp4"></audio>
+
+
     </main>
     <script type="module" src="/main.js"></script>
 </body>
