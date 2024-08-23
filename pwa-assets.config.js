@@ -5,7 +5,20 @@ export default defineConfig({
         preset: "2023",
     },
     preset: combinePresetAndAppleSplashScreens(
-        minimal2023Preset,
+        {
+            transparent: {
+                sizes: [64, 192, 512],
+                favicons: [[48, "favicon.ico"]],
+            },
+            maskable: {
+                sizes: [512],
+                resizeOptions: { background: "#f97316" },
+            },
+            apple: {
+                sizes: [180],
+                resizeOptions: { background: "#f97316" },
+            },
+        },
         {
             padding: 0.3,
             resizeOptions: { background: "#f97316", fit: "contain" },
@@ -18,7 +31,7 @@ export default defineConfig({
                 // by default:
                 // <link rel="apple-touch-startup-image" href="..." media="screen and ...">
                 addMediaScreen: true,
-                basePath: "/",
+                basePath: "./",
                 // add closing link tag?
                 // by default:
                 // <link rel="apple-touch-startup-image" href="..." media="...">
