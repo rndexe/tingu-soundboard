@@ -1,4 +1,7 @@
+import { pwaInfo } from "virtual:pwa-info";
 import { initPWA } from "./pwa.js";
+
+console.log(pwaInfo);
 
 let currentAudio = null;
 
