@@ -12,25 +12,23 @@ export default defineConfig({
             },
             maskable: {
                 sizes: [512],
-                resizeOptions: { background: "#f97316" },
+                resizeOptions: { background: "#9a3412" },
             },
             apple: {
                 sizes: [180],
-                resizeOptions: { background: "#f97316" },
+                resizeOptions: { background: "#9a3412" },
             },
         },
         {
             padding: 0.3,
-            resizeOptions: { background: "#f97316", fit: "contain" },
+            resizeOptions: { background: "#9a3412", fit: "contain" },
             // by default, dark splash screens are exluded
             // darkResizeOptions: { background: 'black' },
             linkMediaOptions: {
-                // will log the links you need to add to your html pages
-                log: true,
                 // add screen to media attribute link?
                 // by default:
                 // <link rel="apple-touch-startup-image" href="..." media="screen and ...">
-                addMediaScreen: true,
+                addMediaScreen: false,
                 basePath: "./",
                 // add closing link tag?
                 // by default:
@@ -52,5 +50,5 @@ export default defineConfig({
         ["iPhone 13"]
     ),
 
-    images: ["public/tingu-orng.png"],
+    images: ["public/tingu-transparent.png"],
 });

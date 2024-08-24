@@ -17,8 +17,8 @@ export default defineConfig({
                 name: "tingu soundboard",
                 short_name: "tingu",
                 description: "tingu soundboard",
-                theme_color: "#f97316",
-                background_color: "#f97316",
+                theme_color: "#9a3412",
+                background_color: "#9a3412",
             },
 
             workbox: {
