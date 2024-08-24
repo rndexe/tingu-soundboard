@@ -1,7 +1,4 @@
-import { pwaInfo } from "virtual:pwa-info";
-import { initPWA } from "./pwa.js";
-
-console.log(pwaInfo);
+import { registerSW } from "virtual:pwa-register";
 
 let currentAudio = null;
 
@@ -46,4 +43,8 @@ function createButtons() {
 // Call the function to create the buttons on page load
 createButtons();
 
-initPWA();
+window.addEventListener("load", () => {
+    registerSW({
+        immediate: true,
+    });
+});
